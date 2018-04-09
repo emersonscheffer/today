@@ -1,0 +1,23 @@
+/*
+This program calculates the product of odd numbers from 1 - 15
+*/
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int odd = 1;
+    int oddProduct = 1;
+
+    while (odd <= 15){
+        
+        oddProduct = oddProduct * odd;
+        
+        odd += 2;
+
+    }
+
+    cout << "Product is: " << oddProduct << endl;
+
+    return 0;
+}
