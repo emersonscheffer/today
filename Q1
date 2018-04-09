@@ -1,0 +1,11 @@
+What’s a default constructor? How are an object’s data members initialized if a 
+class has only a default constructor defined by the compiler?
+
+A default constructor is the constructor that is called when you create an object without specifying 
+any arguments to a constructor. You can write a default constructor that initializes data members 
+any way you choose. The compiler provides a default constructor with no parameters in any class 
+that does not explicitly include a constructor. The default constructor provided by the compiler 
+creates an object without assigning any initial values to the object’s fundamental type data 
+members—data members must be initialized using the object’s member functions. Every constructor 
+implicitly calls the constructors of any data member objects before the body of the class’s 
+constructor executes.
