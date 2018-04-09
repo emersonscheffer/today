@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+int sideA;
+int sideB;
+int sideC;
+
+cout << "Enter the side values for a right triangle" << endl;
+
+do{
+cout << "Side A: ";
+cin >> sideA;
+if (sideA == 0){
+cout << "Please enter a nonzero value, try again" << endl;
+}
+
+} while (sideA == 0);
+
+do{
+cout << "Side B: ";
+cin >> sideB;
+if (sideB == 0){
+cout << "Please enter a nonzero value, try again" << endl;
+}
+
+} while (sideB == 0);
+do{
+cout << "Side C: ";
+cin >> sideC;
+if (sideC == 0){
+cout << "Please enter a nonzero value, try again" << endl;
+}
+} while (sideC == 0);
+
+if((sideA * sideA) + (sideB * sideB) == (sideC * sideC)){
+cout << "Yes it is a triangle " << endl;
+} else if ((sideB * sideB) + (sideC * sideC) == (sideA * sideA)){
+cout << "Yes it is a triangle " << endl;
+} else if ((sideC * sideC) + (sideA * sideA) == (sideB * sideB)){
+cout << "Yes it is a triangle " << endl;
+} else {
+cout << "NO it is NOT a right triangle " << endl;
+}
+
+return 0;
+}
